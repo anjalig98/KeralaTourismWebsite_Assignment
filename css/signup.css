@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    background-image:url(/images/wallpaperflare.com_wallpaper\ \(1\).jpg) ;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+#keralatourismlogo{
+    width:200px;
+    float:left;
+    margin:22px;   
+}
+
+a:hover{
+    color:black;
+    background-color:white;
+}
+.myMargin{
+     margin : 30%;
+    padding: 30px;
+}
+.signup{
+    border:1px solid black;
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.signup.form-floating meter {
+   
+    -webkit-appearance:meter;
+       -moz-appearance: none;
+            appearance: none;
+    display: inline-block;
+    margin: 0 auto 1em;
+    width: 100%;
+    height: 0.5em;
+  
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+
+.signup.form-floating meter::-webkit-meter-bar {
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  

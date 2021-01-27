@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+body{
+    background-image:url(../images/wallpaperflare.com_wallpaper\ \(1\).jpg) ;
+    background-size: cover;  
+    
+}
+
+h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:whitesmoke;
+}
+
+a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+img{
+    text-decoration: none;
+}
+
+#keralatourismlogo{
+    width:200px;
+    float: left;
+    margin : 22px;   
+}
+
+a:hover{
+    color:black;
+    background-color:white;
+    text-decoration: none;
+}
+
+.myMargin{
+    margin: 25px;
+    padding: 20px;
+}
+p{
+    background-color: black;
+    color:whitesmoke;
+    padding: 10px;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h4{
+    text-align: center;
+}
+
+.login{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+

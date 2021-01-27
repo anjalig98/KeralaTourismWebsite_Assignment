@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup</title>
+        <link rel="stylesheet" href="./css/signup.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+    </head>
+    <body>
+        <!-- Nav-bar Start -->
+        
+            <nav class="navbar navbar-expand-lg navbar-light "style="background-color:rgba(0,0,0,0.2)">
+                <img id="keralatourismlogo" src="./images/kerala-tourism-title.png">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="signup.html">Signup</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="district.html">Districts</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+              </div>
+            </div>
+            </nav> 
+    
+    <div class="row"> 
+        <!-- Nav-bar-End -->
+       
+    <div class="col-lg-3"></div>
+        
+        <!-- Forms start here -->
+        <div class="signup col-lg-5 myMargin" >
+          <form class="row g-3" action="login.html" onsubmit=" return validateSignup()">
+            <div style="text-align: center;">
+            Already have an account <a href="login.html">Login</a>
+            </div>
+            
+            <div class="form-floating mb-3 col-12">
+                <input type="text" class="form-control" id="name" placeholder="name@example.com">
+                <label for="floatingInput"> Name</label>
+                
+                <span id="firstnam" class="text-danger font-weight bold"></span>
+            
+                
+            </div>
+              <div class="form-floating mb-3 col-12">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <label for="floatingInput">Email Address</label>
+                <span id="emailid" class="text-danger font-weight bold"></span>
+            
+              </div>
+
+              <div class="form-floating mb-3 col-12">
+                <input type="text" class="form-control" id="contact" placeholder="Contact Number">
+                <label for="floatingInput">Contact Number</label>
+                <span id="contactno" class="text-danger font-weight bold"></span>
+            
+              </div>
+
+              <div class="form-floating mb-3 col-12">
+                <input type="password" class="form-control" id="pass" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+                <span id="passwo" class="text-danger font-weight bold"></span>
+                <meter max="4" id="password-strength-meter"></meter>
+                <p id="password-strength-text"></p>
+              </div>
+              
+
+              <div class="form-floating mb-3 col-12">
+                <input type="password" class="form-control" id="confirmpass" placeholder="Password">
+                <label for="floatingPassword">Confirm Password</label>
+                <span id="conpassword" class="text-danger font-weight bold"></span>
+            
+              </div>
+            
+              <p>Use 8 or more characters with a mix of letters, numbers & symbols</p>
+              
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                     Check me out
+                    </label>
+                </div>
+              </div>
+              <div class="col-12" style="text-align: center;">
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </div>
+          </form>
+        </div>
+        <!-- Form Ends Here  -->
+
+
+        <script src="formSignup.js"></script>
+    </body>
+</html>
